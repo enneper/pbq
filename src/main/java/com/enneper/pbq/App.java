@@ -2,7 +2,7 @@ package com.enneper.pbq;
 
 import com.enneper.pbq.parcel.VTParcel;
 import com.enneper.pbq.shapefile.ShapefileCreator;
-import com.enneper.town.Town;
+import com.enneper.pbq.town.Town;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.util.logging.Logging;
 import org.locationtech.jts.geom.*;
@@ -18,11 +18,10 @@ import com.enneper.pbq.shapefile.ShapefileReader;
 import com.enneper.pbq.utils.GeometryUtils;
 
 public class App {
-  static final Logger LOGGER = Logging.getLogger(App.class);
+  private static final Logger LOGGER = Logging.getLogger(App.class);
 
   public static void main(String[] args)
-          throws java.io.IOException, org.geotools.filter.text.cql2.CQLException,
-          org.geotools.feature.SchemaException {
+          throws java.io.IOException, org.geotools.filter.text.cql2.CQLException {
 
     // Do some simple argument file checking.
     if (args.length == 0) {

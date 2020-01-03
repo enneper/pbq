@@ -1,6 +1,6 @@
 package com.enneper.pbq.shapefile;
 
-import com.enneper.town.Town;
+import com.enneper.pbq.town.Town;
 import org.geotools.data.DefaultTransaction;
 import org.geotools.data.FileDataStoreFactorySpi;
 import org.geotools.data.Transaction;
@@ -12,7 +12,6 @@ import org.geotools.feature.DefaultFeatureCollection;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.util.logging.Logging;
-import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.MultiPolygon;
 import org.opengis.feature.simple.SimpleFeatureType;
 
@@ -28,7 +27,7 @@ import java.util.logging.Logger;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 public class ShapefileCreator {
-  static final Logger LOGGER = Logging.getLogger(ShapefileCreator.class);
+  private static final Logger LOGGER = Logging.getLogger(ShapefileCreator.class);
 
   private final SimpleFeatureBuilder featureBuilder;
   private final ShapefileDataStore dataStore;
