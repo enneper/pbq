@@ -12,3 +12,4 @@ Usage requires unzipped source shapefile downloaded from link above as argument 
 Some notable items:
 1. Source shapefile does contain one parcel in town of Chester that contains no geometry, this parcel is skipped
 2. There are about a 20 invalid parcel geometries (typically those that have intersecting lines) is source, these are automatically corrected to be valid.
+3. Unit tests are pending
