@@ -15,3 +15,4 @@ Some notable items on source:
 TODO items on this code.  These are key items that would be included if this code was going to be used in on-going production and built to be extended for other (NH) parcel sources. 
 1. Unit tests - ISLE OF MOTTE is good test case as it is a MultiPolygon
 2. Parcel Factory - for parcel source input using Parcel interface (which is present) and concrete parcel classes for each state (eg. VTParcel which is also present)
+3. Threading - by state and within state by town
