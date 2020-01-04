@@ -1,9 +1,9 @@
 # pbq
 Java JTS problem solution
 
-Problem is describe in "Vermont ENG Code Exercise.pdf", input shapefile data can be downloaded here (https://geodata.vermont.gov/datasets/e12195734d38410185b3e4f1f17d7de1_17/data).
+Problem is describe in "Vermont ENG Code Exercise.pdf", input shapefile data can be downloaded here (https://geodata.vermont.gov/datasets/e12195734d38410185b3e4f1f17d7de1_17/data).  Problem statement asked for GEOMETRY field, I named the geometry field the_geom as QGIS did not display the geometry when the field was named GEOMETRY.
 
-Repository can be cloned down to local (see green "clone" button above).  You can project within IDE or use maven, use "mvn clean package", to generate uber (with dependencies) jar named towns-1.0-SNAPSHOT-jar-with-dependencies.jar to run at command line.
+Repository can be cloned down to local (see green "clone" button above).  You can create a project within IDE or use maven, use "mvn clean package", to generate uber (with dependencies) jar named towns-1.0-SNAPSHOT-jar-with-dependencies.jar to run at command line.
 
 Usage requires unzipped vermont parcel source shapefile (.shp file) as argument to jar (eg. java -jar towns-1.0-SNAPSHOT-jar-with-dependencies.jar <source file directory>\VT_Data_Statewide_Standardized_Parcel_Data__parcel_polygons.shp)
 Program will create shapefile named "town-<timestamp>.*, an example solution is at the root of this repository.
